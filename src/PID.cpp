@@ -1,9 +1,6 @@
 #include "PID.h"
 #include <limits>       // std::numeric_limits
 #include <iostream>
-/**
- * TODO: Complete the PID class. You may add any additional desired functions.
- */
 
 PID::PID()
 {
