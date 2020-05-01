@@ -14,7 +14,7 @@ PID stands for Proportional-Integral-Derivative. It is a controller with three c
  ### Cross Track Error (CTE)
  * It is a distance between the vehicle´s actual trajectory and the groundtruth trajectory. It is best suited to control the vehicle by steering in proportion to CTE.
  
- ### Systematic Biss
+ ### Systematic Bias
 * This is a term used in Robotics that tells you how much the vehicle´s steerable wheels are aligned.
  
 ### P- Controller 
