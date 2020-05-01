@@ -6,14 +6,16 @@ Self-Driving Car Engineer Nanodegree Program
 ---
 # Introduction
 ## Goal:
-* This project implements a PID controller in C++ to maneuver the vehicle around the track in the [simulator](https://github.com/udacity/self-driving-car-sim.git)! 
-* Two PID controllers are to be implemented one for steering control and another for throttle control.
+This project implements a PID controller in C++ to maneuver the vehicle around the track in the [simulator](https://github.com/udacity/self-driving-car-sim.git)! Two PID controllers are to be implemented one for steering control and another for throttle control.
 
 # Fundamentals
-* PID stands for Proportional-Integral-Derivative. It is a controller with three coeffients P, I and D. The effects of these coefficients are discussed below.
+PID stands for Proportional-Integral-Derivative. It is a controller with three coeffients P, I and D. The effects of these coefficients are discussed below.
 
  ## Cross Track Error (CTE)
  * It is a distance between the vehicle´s actual trajectory and the groundtruth trajectory. It is best suited to control the vehicle by steering in proportion to CTE.
+ 
+ ## Systematic Biss
+* This is a term used in Robotics that tells you how much the vehicle´s steerable wheels are aligned.
  
 ## P- Controller 
 * It sets the steering angle in proportion to CTE by virtue of a gain parameter called tau.
@@ -22,7 +24,7 @@ Self-Driving Car Engineer Nanodegree Program
 * The following graph demonstrates the overshooting due to P controller.
 
 <p align="center">
-  <img width="500" height="300" src="results/p.png">
+  <img width="400" height="200" src="results/p.png">
 </p>
 
 ## PD- Controller 
@@ -31,11 +33,8 @@ Self-Driving Car Engineer Nanodegree Program
 * The following graph demonstrates the behaviour of P controller and PD controller.
 
 <p align="center">
-  <img width="500" height="300" src="results/pd.png">
+  <img width="400" height="200" src="results/pd.png">
 </p>
-
-## Systematic Biss
-* This is a term used in Robotics that tells you how much the vehicle´s steerable wheels are aligned.
 
 ## PID- Controller
 * Finally this controller overcomes the problem of overshooting and systematic bias by adding one more term.
@@ -43,7 +42,7 @@ Self-Driving Car Engineer Nanodegree Program
 * The following graph summerizes the P-, PD-, and PID- controllers.
 
 <p align="center">
-  <img width="500" height="300" src="results/pid.png">
+  <img width="400" height="200" src="results/pid.png">
 </p>
 
 ## Basic Build Instructions
